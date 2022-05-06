@@ -25,6 +25,7 @@ form:
   - custom_environment
   - modules
   - extra_jupyter_args
+  - compute_node
   - bc_account
   - bc_queue
   - bc_num_hours
