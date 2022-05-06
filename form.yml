@@ -13,7 +13,12 @@ attributes:
     label: Environment Setup (drag text area to enlarge)
     help: "Enter commands (conda activate, source activate, etc) to create your desired jupyter notebook environment; jupyter MUST be on your path"
     value: |
+        eval "$(conda shell.bash hook)"
         conda activate nama-env
+  compute_node:
+    widget: text_field
+    label: Compute Node (Komputasi0[3,4,6,7,8,9])
+    help: "Choose on which node to run your Jupyter kernel, see specs on user guide, if empty then any idle node will be chosen"
 
 
 form:
