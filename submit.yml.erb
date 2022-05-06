@@ -25,10 +25,10 @@ batch_connect:
 # @see http://www.rubydoc.info/gems/ood_core/OodCore/Job/Script
 #
 script:
-  <% if @context.compute_node != '' -%>
+  <% if @compute_node != '' -%>
   native:
     - "-w"
-    - "<%= context.compute_node %>"
+    - "<%= compute_node %>"
   <% end -%>
 
 #  queue_name: "queue1"
