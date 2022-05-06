@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# SBATCH nodelist= <%= context.compute_node, "\n" %>
+# SBATCH --nodelist=<%= context.compute_node, "\n" %>
 
 # Benchmark info
 echo "TIMING - Starting main script at: $(date)"
