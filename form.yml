@@ -16,10 +16,18 @@ attributes:
         eval "$(conda shell.bash hook)"
         conda activate nama-env
   compute_node:
-    widget: text_field
+    widget: select
     label: Compute Node (komputasi0[3,4,6,7,8,9])
     help: "Choose on which node to run your Jupyter kernel, see specs on user guide, if empty then any idle node will be chosen"
-
+    options:
+    - ["Any", ""]
+    - ["komputasi03", "komputasi03"]
+    - ["komputasi04", "komputasi03"]
+    - ["komputasi06", "komputasi03"]
+    - ["komputasi07", "komputasi03"]
+    - ["komputasi08", "komputasi03"]
+    - ["komputasi09", "komputasi03"]
+    value: "Any"
 
 form:
   - custom_environment
