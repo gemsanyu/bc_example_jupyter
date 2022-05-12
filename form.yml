@@ -7,13 +7,7 @@ attributes:
   bc_num_slots: 1
   bc_email_on_started: null
   bc_account: slurm-user
-  bc_queue:
-    widget: select
-    label: Cluster
-    help: "Choose Cluster, untuk debug atau dgx (in progress)"
-    options:
-    - ["debug", "debug"]
-    value: "debug"
+  bc_queue: debug
   custom_environment:
     widget: text_area
     label: Environment Setup (drag text area to enlarge)
@@ -28,11 +22,11 @@ attributes:
     options:
     - ["Any", ""]
     - ["komputasi03", "komputasi03"]
-    - ["komputasi04", "komputasi03"]
-    - ["komputasi06", "komputasi03"]
-    - ["komputasi07", "komputasi03"]
-    - ["komputasi08", "komputasi03"]
-    - ["komputasi09", "komputasi03"]
+    - ["komputasi04", "komputasi04"]
+    - ["komputasi06", "komputasi06"]
+    - ["komputasi07", "komputasi07"]
+    - ["komputasi08", "komputasi08"]
+    - ["komputasi09", "komputasi09"]
     value: "Any"
 
 form:
